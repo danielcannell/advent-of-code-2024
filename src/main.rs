@@ -2,6 +2,7 @@ use std::env;
 use std::process::exit;
 
 mod day1;
+mod day2;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -27,6 +28,7 @@ fn main() {
 
     match day {
         1 => day1::solve(),
+        2 => day2::solve(),
 
         _ => {
             eprintln!("I haven't solved that day yet!");
